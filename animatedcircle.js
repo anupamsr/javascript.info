@@ -33,6 +33,7 @@
     });
   }
 
+  // Call showCircle after DOM is loaded
   document.addEventListener('DOMContentLoaded', function (event) {
     let promise = showCircle(150, 150, 100);
 
@@ -49,7 +50,7 @@
 
         div.classList.add('message-ball');
         div.append('Hello, world!');
-      }, // shows "done!" after 1 second
+      }, // shows hello world message after transition end of circle
       error => console.log(error) // doesn't run
     );
   });
