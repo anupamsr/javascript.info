@@ -7,9 +7,18 @@
   <title>Test</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
-  <script src="main.js"></script>
 </head>
 
-<body></body>
+<body>
+  <script src="clock.js"></script>
+  <script>
+    let clock = new Clock({
+      template: 'h:m:s'
+    });
+    clock.start();
+    setTimeout(() => clock.stop(), 2000);
+    // clock.stop();
+  </script>
+</body>
 
 </html>
